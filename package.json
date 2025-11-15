@@ -6,5 +6,12 @@
   "repository": "github.com/diaslui/makea4poster",
   "author": "diaslui",
   "license": "MIT",
-  "private": false
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }
