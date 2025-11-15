@@ -1,0 +1,10 @@
+{
+  "name": "makea4poster",
+  "version": "1.0.0",
+  "description": "make a poster with a4 sheets",
+  "main": "src/index.js",
+  "repository": "github.com/diaslui/makea4poster",
+  "author": "diaslui",
+  "license": "MIT",
+  "private": false
+}
