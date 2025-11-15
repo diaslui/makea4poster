@@ -1,0 +1,167 @@
+
+:root {
+  --background: 249 250 251;
+  --foreground: 17 24 39;
+  --card: 255 255 255;
+  --card-foreground: 17 24 39;
+  --popover: 255 255 255;
+  --popover-foreground: 17 24 39;
+  --primary: 79 70 229;
+  --primary-foreground: 255 255 255;
+  --secondary: 243 244 246;
+  --secondary-foreground: 31 41 55;
+  --muted: 243 244 246;
+  --muted-foreground: 107 114 128;
+  --accent: 243 244 246;
+  --accent-foreground: 31 41 55;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 229 231 235;
+  --input: 229 231 235;
+  --ring: 79 70 229;
+}
+
+.dark {
+  --background: 17 24 39;
+  --foreground: 249 250 251;
+  --card: 31 41 55;
+  --card-foreground: 249 250 251;
+  --popover: 31 41 55;
+  --popover-foreground: 249 250 251;
+  --primary: 129 140 248;
+  --primary-foreground: 17 24 39;
+  --secondary: 55 65 81;
+  --secondary-foreground: 249 250 251;
+  --muted: 55 65 81;
+  --muted-foreground: 156 163 175;
+  --accent: 75 85 99;
+  --accent-foreground: 249 250 251;
+  --destructive: 220 38 38;
+  --destructive-foreground: 249 250 251;
+  --border: 75 85 99;
+  --input: 75 85 99;
+  --ring: 129 140 248;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, sans-serif;
+}
+
+.bg-background {
+  background-color: rgb(var(--background));
+}
+
+.bg-card {
+  background-color: rgb(var(--card));
+}
+
+.bg-primary {
+  background-color: rgb(var(--primary));
+}
+
+.bg-secondary {
+  background-color: rgb(var(--secondary));
+}
+
+.bg-destructive {
+  background-color: rgb(var(--destructive));
+}
+
+.bg-muted\/30 {
+  background-color: rgb(var(--muted) / 0.3);
+}
+
+.bg-accent\/50 {
+  background-color: rgb(var(--accent) / 0.5);
+}
+
+.bg-primary\/10 {
+  background-color: rgb(var(--primary) / 0.1);
+}
+
+.text-foreground {
+  color: rgb(var(--foreground));
+}
+
+.text-primary {
+  color: rgb(var(--primary));
+}
+
+.text-primary-foreground {
+  color: rgb(var(--primary-foreground));
+}
+
+.text-secondary-foreground {
+  color: rgb(var(--secondary-foreground));
+}
+
+.text-muted-foreground {
+  color: rgb(var(--muted-foreground));
+}
+
+.text-destructive-foreground {
+  color: rgb(var(--destructive-foreground));
+}
+
+.border-border {
+  border-color: rgb(var(--border));
+}
+
+.border-primary {
+  border-color: rgb(var(--primary));
+}
+
+.hover\:bg-accent:hover {
+  background-color: rgb(var(--accent));
+}
+
+.poster-tile {
+  position: relative;
+  border: 2px solid rgb(var(--border));
+  background: rgb(var(--card));
+  overflow: hidden;
+}
+
+.poster-tile-number {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgb(var(--primary));
+  color: rgb(var(--primary-foreground));
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 10;
+}
+
+.cut-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.cut-line {
+  position: absolute;
+  background: rgb(var(--primary));
+  opacity: 0.5;
+}
+
+.cut-line-h {
+  height: 1px;
+  width: 20px;
+}
+
+.cut-line-v {
+  width: 1px;
+  height: 20px;
+}
